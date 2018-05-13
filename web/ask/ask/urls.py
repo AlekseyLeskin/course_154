@@ -19,12 +19,12 @@ from django.urls import path
 from ask import qa
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path(r'^$', qa.urls),
-    path(r'^login/', qa.urls),
-    path(r'^signup/', qa.urls),
-    path(r'^question/', qa.urls),
-    path(r'^ask/', qa.urls),
-    path(r'^popular/', qa.urls),
-    path(r'^new/', qa.urls),
+    path('admin/', qa.views.test),
+    path(r'^$', qa.views.test),
+    path(r'^login/', qa.views.test),
+    path(r'^signup/', qa.views.test),
+    path(r'^question/', qa.views.test),
+    path(r'^ask/', qa.views.test),
+    path(r'^popular/', qa.views.test),
+    path(r'^new/', qa.views.test),
 ]
